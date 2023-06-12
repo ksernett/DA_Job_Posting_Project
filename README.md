@@ -12,7 +12,8 @@ This project seeks to analyze job postings for data analytics positions in order
     │   ├── images              # image files
     │   ├── js                  # javascript code
     ├── templates               # html files for use in the application
-    └── README.md
+    ├── README.md               # README file
+    └── app.py                  # file to run/open the app website
 
 ----
 ## API KEY
