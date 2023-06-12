@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+
+  <title>Job Analysis</title>
+
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3px;
+    }
+
+    #selDataset {
+      width: 250px;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+
+    </div>
+  </header>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Data Job Visualizations</h1>
+        </p>
+        <p>
+        </p>
+        <button type="button" onclick="window.location.href='http://127.0.0.1:5000/'"
+          class="btn btn-sm btn-outline-secondary">Home</button>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <div class="container-fluid">
+
+        <!--Viz Row-->
+        <div class="row" id="viz-row">
+
+          <div class="row" id="viz-row">
+            <h4>Hard Skills</h4>
+            <br />
+            <p>
+            <div class='grid'>
+              <div><img src="../static/images/hard_skill_wordcloud.png" alt="Hard Skill WordCloud" width='600'></div>
+              <div><img src="../static/images/hard_skill_bar.png" alt="Hard Skill Bar Graph" width='600'></div>
+            </div>
+            </p>
+            <h4>Soft Skills</h4>
+            <br />
+            <p>
+            <div class='grid'>
+              <div><img src="../static/images/soft_skill_wordcloud.png" alt="Soft Skill WordCloud" width='600'></div>
+              <div><img src="../static/images/soft_skill_bar.png" alt="Soft Skill Bar Graph" width='600'></div>
+            </div>
+            </p>
+          </div>
+          <p><img src="../static/images/wfh_office.png" alt="Remote vs In Office Job Postings Pie Graph" class='center'>
+          </p>
+          <br />
+          <p><img src="../static/images/postings_per_title.png" alt="Number of Postings Per Job Title Bar Graph"
+              class='center'></p>
+          <br />
+          <p><img src="../static/images/salary_standardized.png" alt="Salary Standardized to Yearly Pay Bar Graph"
+              class='center'></p>
+          <br />
+          <p><img src="../static/images/salary_per_title.png" alt="Average Salary Per Job Title Bar Graph"
+              class='center'></p>
+        </div>
+        <br />
+        <hr>
+        <br />
+
+      </div>
+
+
+
+      <!--d3.js -->
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+
+      <!--plotly.js -->
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+      <!-- Bar Chart JavaScript -->
+      <script type="text/javascript" src="../static/js/js_visuals.js"></script>
+
+</body>
+
+</html>
